@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+ 
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+ul li{
+    list-style:none;
+}
+a{
+    font-size:1.6rem;
+    text-decoration: none;
+    
+}
+p , li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/* ***** Utility Classes ****** */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.bg-dark{
+    background-color: #263238;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size:2.2rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color:#f4f4f4;
+}
+.text-black{
+    color: #333;
+}
+.text-gray{
+    color: #555;
+}
+.btn{
+    
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+    
+}
+.btn-primary{
+    color: #e63946;
+    border-radius: 100px;
+    border: 2px solid #e63946;
+    background-color: #fff;
+}
+
+
+/* *********** header styling********** */
+
+.header{
+    position: relative;
+    height: 95vh;
+    background:linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url('../img/header-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;     
+}
+.navbar{
+    border: 1px solid white;
+    padding: 1rem;
+}
+.logo, .header .navbar a{
+    /* color: white;    */
+}
+.navbar .logo{
+    float: left;
+}
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+.navbar .navitem{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;   
+} 
+.navbar a:hover{
+    border-bottom: 1px solid #f4f4f4;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ***********Header content********** */
+.header-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.header-content p{
+    text-transform: uppercase;
+}
+
+
+/* ****** show case section styling *****/
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    height: 350px;
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .imgbox, .row2 .textbox{
+    float: left;
+    width: 50%;
+}
+.row2 .imgbox, .row1 .textbox{
+    float: right;
+    width: 50%;
+}
+.row .imgbox{
+    height: 100%;
+}
+.row .textbox{
+    background-color: #f4f4f4;
+    height: 100%;
+    padding: 3rem;
+}
+.row img{
+    width: 100%;
+    height: 100%;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* **** ShowCase Content ****** */
+.showcase .row{
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+.showcase .textbox .sectionheading{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.showcase .textbox button{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #e63946;
+    border: 2px solid #e63946;
+    padding: 5px 15px;
+    border-radius:24px;
+    margin-top: 10px;
+}
+
+/* ****** Feature Section****** */
+.features{
+    padding: 10rem 0rem;
+}
+.box-wrapper{
+    /* border:2px solid green; */
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.466);
+}
+.box{
+    width: 33.33333%;
+    float: left;
+    /* border: 1px solid black; */
+    padding: 2rem;
+    text-align: center;
+}
+.box-1, .box-3{
+    background-color: #263238;
+    color: white;
+}
+.box-2{ 
+    background-color: #e63946;
+    color: white;
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ***** FOOTER ******* */
+.footer{   
+    background-color: rgb(59, 58, 58);
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+.social-media-links i{
+    margin: 2rem;
+}
+
+
+/* ******* About Styling ************** */
+
+.about{
+    padding: 5rem 0; 
+}
+.about-heading::after{
+    content: "";
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+}
+.about-wrapper{
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 2rem;
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.about-wrapper li::before{
+    content: "\2713";
+    color: #e63946;
+    font-weight: bold;
+    padding-rightd: 1rem ;
+}
+
+/* ********stats STYLE******** */
+
+.stats-wrapper{
+    text-align: center;
+}
+.stats{
+    display: inline-block;
+    /* max-width: 25%; */
+    width: 24%;
+}
+.stats p{
+    font-weight:600;
+
+}
+
+/* ********* ctn banner style **** */
+.cta-banner{
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    color: #f4f4f4;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+.cta-banner-left{
+    float: left;
+    width: 60%;
+}
+.cta-banner-right{
+    float: right;
+    text-align: right;
+    width: 40%;
+}
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+
+}
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3rem 2.5rem;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+}
+.cta-banner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ************** Contact Form********** */
+
+.contact-form{
+        padding: 5rem;
+}
+.contact-wrapper{
+    /* border: 2px solid red; */
+}
+
+.company-address{
+    /* border: 1px solid green; */
+    width: 49%;
+    float: left;
+    padding: 1rem;
+}
+
+.contact-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.contact-wrapper .company-address h2{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.contact-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+.contact-wrapper .company-address img{
+    width: 100%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+
+}
+
+/* ***** FORM STYLING **** */
+.form{
+    /* border: 1px solid green; */
+    width: 49%;
+    float: right;
+    font: 1.6rem;
+    padding: 1rem;
+}
+.form h1::after{
+    content: "";
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+}
+.contact-wrapper .form label{
+    display: block;
+}
+.contact-wrapper .form input{
+    padding:0.5rem;
+    width: 100%;
+}
+
+.contact-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+.contact-wrapper .form label::after{
+    content: "* ";
+    color: #e63946;
+}
+.contact-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size:1.8rem;
+    text-transform: uppercase;
+    background-color: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.contact-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ********** MEDIA QUERY ******** */
+@media (max-width:500px) {
+    html{
+        font-size: 8px;
+    }
+    .header .navbar .logo , .header .navbar .nav-items{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .header-content h1{
+        border: 1px solid white;
+        display: none;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .imgbox , .row .textbox{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .features .box-2, .box-3{
+        margin-top: 7rem;
+    }
+    .about .cta-banner-left ,.cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .contact-wrapper .company-address, .form{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .contact-wrapper .form .form-group label{
+        text-align: left;
+
+    }
+}
+
+
+
+
+
+
+
+
+/* .social-media-links{
+    text-align: center;
+}
+.f-icon{
+    margin-top: 2rem;    
+    margin-right: 2rem;
+    color: #fff;
+}
+.f-text{
+    margin-top: 1rem;
+    color: white;
+} */
